@@ -16,13 +16,3 @@ Save widl.vim into one of the following locations:
 
 * The path vim was installed to, e.g. "C:\Program Files\Vim\vimfiles\syntax\". 
 
-For vim to recognize widl files you need to add the following to a file named filetype.vim 
-
-```
-augroup filetypedetect 
-au BufNewFile,BufRead *.widl	setf widl 
-augroup END 
-```
-
-Save that file in the "vimfiles" directory you chose above.
-
