@@ -1,4 +1,4 @@
-# widl.vim Web IDL (widl) syntax highlighting
+# vim-widl Web IDL (widl) syntax highlighting for VIM
 
 ## Description
 Syntax Highlighting support for Web IDL files. Also supports doxygen-like commands in the comment blocks as supported by the widlproc tool.
