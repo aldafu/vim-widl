@@ -1,28 +1,16 @@
-# widl.vim Web IDL (widl) syntax highlighting
+# vim-widl Web IDL (widl) syntax highlighting for VIM
 
 ## Description
-Syntax Highlighting support for Web IDL files. Also supports doxygen-like commands in the comment blocks as supported by the widlproc tool.
+Syntax highlighting support for [Web IDL](http://www.w3.org/TR/NOTE-widl-970922 "NOTE-widl-970922") files. Also supports doxygen-like commands in the comment blocks as supported by the widlproc tool.
  
-### Installation
-On Linux: 
-Save widl.vim to ~/.vim/syntax/ 
+## Installation
 
-On Windows: 
-Save widl.vim into one of the following locations: 
+For pathogen users just add vim-widl as a submodule to your bundle:
 
-* Your user profile path, e.g. "C:\Users\username\" and there into "vimfiles\syntax\". 
+    $ cd
+    $ git submodule add -f git://github.com/aldafu/vim-widl.git .vim/bundle/widl
 
-  or 
+If you are not using pathogen you can manually copy the files to the appropriate locations in your `.vim` directory.
 
-* The path vim was installed to, e.g. "C:\Program Files\Vim\vimfiles\syntax\". 
-
-For vim to recognize widl files you need to add the following to a file named filetype.vim 
-
-```
-augroup filetypedetect 
-au BufNewFile,BufRead *.widl	setf widl 
-augroup END 
-```
-
-Save that file in the "vimfiles" directory you chose above.
+**Note for windows users:** instead of `.vim` above use your profile path, e.g. "C:\Users\username\vimfiles\". 
 
