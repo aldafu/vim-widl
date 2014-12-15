@@ -35,7 +35,7 @@ highlight def link widlDocTag SpecialComment
 syntax match widlDoctag :\\api-feature\|\\author\|\\b\(rief\)\?\|\\code\|\\endcode\|\\def-api-feature\|\\def-api-feature-set\|\\def-device-cap\|\\def-instantiated\|\\device-cap\|\\n\|\\param\|\\return\|\\throw\|\\version: contained
 
 highlight def link widlExtAttr Define
-syntax match widlExtAttr :\[\(\u\(\a\)\+\(,\)\?\_[^\]]*\)\+\]:
+syntax match widlExtAttr :\[\(\u\(\a\)\+\(,\)\?\_[^\]]*\)\+\]: contains=widlComment2
 
 highlight def link widlString Character
 syntax region widlString start=:': skip=:\\': end=:':
